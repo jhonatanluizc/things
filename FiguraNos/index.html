@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiguraNos</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+
+<script>
+    function retangulo() {
+        var base = document.getElementById("retangulo_b").value;
+        var altura = document.getElementById("retangulo_h").value;
+        var r = (parseFloat(base) + parseFloat(altura));
+        alert("Perímetro do Retângulo = " + (r * 2));
+    }
+
+    function quadrado() {
+        var lado = document.getElementById("quadrado_l").value;
+        alert("Perímetro do Quadrado = " + (lado * 4));
+    }
+
+    function paralelograma() {
+        var base = document.getElementById("paralelograma_b").value;
+        var altura = document.getElementById("paralelograma_a").value;
+        var r = (parseFloat(base) + parseFloat(altura));
+        alert("Perímetro do Paralelogramo = " + (r * 2));
+    }
+
+    function trapezio() {
+        var l1 = document.getElementById("trapezio_l1").value;
+        var l2 = document.getElementById("trapezio_l2").value;
+        var l3 = document.getElementById("trapezio_l3").value;
+        var l4 = document.getElementById("trapezio_l4").value;
+        var r = (parseFloat(l1) + parseFloat(l2) + parseFloat(l3) + parseFloat(l4));
+        alert("Perímetro do Trapézio = " + r);
+    }
+</script>
+
+<body>
+
+    <div class="nav">
+        <span class="title">FiguraNos</span>
+        <hr>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="left">
+                <div class="title">Retângulo</div>
+                <div>
+                    <img src="retangulo.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="btn">
+                    <div>
+                        <input placeholder="Base" name="retangulo_b" id="retangulo_b">
+                    </div>
+                    <div>
+                        <input placeholder="Altura" name="retangulo_h" id="retangulo_h">
+                    </div>
+                    <div>
+                        <button onclick="retangulo()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="title">Quadrado</div>
+                <div>
+                    <img src="quadrado.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="btn">
+                    <div>
+                        <input placeholder="Lado" name="quadrado_l" id="quadrado_l">
+                    </div>
+                    <div>
+                        <button onclick="quadrado()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="title">Paralelogramo</div>
+                <div>
+                    <img src="paralelogramo.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="btn">
+                    <div>
+                        <input placeholder="Base" name="paralelograma_b" id="paralelograma_b">
+                    </div>
+                    <div>
+                        <input placeholder="Lado" name="paralelograma_a" id="paralelograma_a">
+                    </div>
+                    <div>
+                        <button onclick="paralelograma()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <div class="title">Trapézio</div>
+                <div>
+                    <img src="trapezio.jpg" alt="">
+                </div>
+            </div>
+            <div class="right">
+                <div class="btn">
+                    <div>
+                        <input placeholder="Lado 1" name="trapezio_l1" id="trapezio_l1">
+                    </div>
+                    <div>
+                        <input placeholder="Lado 2" name="trapezio_l2" id="trapezio_l2">
+                    </div>
+                    <div>
+                        <input placeholder="Lado 3" name="trapezio_l3" id="trapezio_l3">
+                    </div>
+                    <div>
+                        <input placeholder="Lado 4" name="trapezio_l4" id="trapezio_l4">
+                    </div>
+                    <div>
+                        <button onclick="trapezio()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="nav">
+        <hr>
+        <span class="title">FiguraNos</span>
+        <br><br>
+        Jhonatan Luiz Chagas
+        <br>
+        4 ADS 20/02/2020
+    </div>
+    <hr>
+</body>
+
+</html>
