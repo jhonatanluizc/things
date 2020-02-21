@@ -5,40 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FiguraNos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="dev/style.css">
 
 </head>
 
 
-<script>
-    function retangulo() {
-        var base = document.getElementById("retangulo_b").value;
-        var altura = document.getElementById("retangulo_h").value;
-        var r = (parseFloat(base) + parseFloat(altura));
-        alert("Perímetro do Retângulo = " + (r * 2));
-    }
-
-    function quadrado() {
-        var lado = document.getElementById("quadrado_l").value;
-        alert("Perímetro do Quadrado = " + (lado * 4));
-    }
-
-    function paralelograma() {
-        var base = document.getElementById("paralelograma_b").value;
-        var altura = document.getElementById("paralelograma_a").value;
-        var r = (parseFloat(base) + parseFloat(altura));
-        alert("Perímetro do Paralelogramo = " + (r * 2));
-    }
-
-    function trapezio() {
-        var l1 = document.getElementById("trapezio_l1").value;
-        var l2 = document.getElementById("trapezio_l2").value;
-        var l3 = document.getElementById("trapezio_l3").value;
-        var l4 = document.getElementById("trapezio_l4").value;
-        var r = (parseFloat(l1) + parseFloat(l2) + parseFloat(l3) + parseFloat(l4));
-        alert("Perímetro do Trapézio = " + r);
-    }
-</script>
 
 <body>
 
@@ -53,7 +24,7 @@
             <div class="left">
                 <div class="title">Retângulo</div>
                 <div>
-                    <img src="retangulo.jpg" alt="">
+                    <img src="dev/retangulo.jpg" alt="">
                 </div>
             </div>
             <div class="right">
@@ -75,7 +46,7 @@
             <div class="left">
                 <div class="title">Quadrado</div>
                 <div>
-                    <img src="quadrado.jpg" alt="">
+                    <img src="dev/quadrado.jpg" alt="">
                 </div>
             </div>
             <div class="right">
@@ -94,7 +65,7 @@
             <div class="left">
                 <div class="title">Paralelogramo</div>
                 <div>
-                    <img src="paralelogramo.jpg" alt="">
+                    <img src="dev/paralelogramo.jpg" alt="">
                 </div>
             </div>
             <div class="right">
@@ -116,7 +87,7 @@
             <div class="left">
                 <div class="title">Trapézio</div>
                 <div>
-                    <img src="trapezio.jpg" alt="">
+                    <img src="dev/trapezio.jpg" alt="">
                 </div>
             </div>
             <div class="right">
@@ -142,7 +113,6 @@
 
     </div>
 
-
     <div class="nav">
         <hr>
         <span class="title">FiguraNos</span>
@@ -152,6 +122,7 @@
         4 ADS 20/02/2020
     </div>
     <hr>
+    <script src="dev/scripts.js"></script>
 </body>
 
 </html>
