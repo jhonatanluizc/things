@@ -11,6 +11,6 @@ FiguraNos
 
 jogo-da-velha
 
-É o clássico tic tac toe, feito em javascript puro! 
+É o clássico tic tac toe feito em javascript puro! 
 
 ---------------------------------------
