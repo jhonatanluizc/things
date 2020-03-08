@@ -5,123 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FiguraNos</title>
-    <link rel="stylesheet" href="dev/style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
-
-    <div class="nav">
-        <span class="title">FiguraNos</span>
-        <hr>
+    <div class="title">
+        <h1>FiguraNos</h1>
     </div>
+
 
     <div class="cards">
-
         <div class="card">
-            <div class="left">
-                <div class="title">Retângulo</div>
-                <div>
-                    <img src="dev/retangulo.jpg" alt="">
-                </div>
+            <div class="card-col-1">
+                <h1>Retângulo</h1>
+                <img src="dev/retangulo.jpg" alt="">
             </div>
-            <div class="right">
-                <div class="btn">
-                    <div>
-                        <input placeholder="Base" name="retangulo_b" id="retangulo_b">
-                    </div>
-                    <div>
-                        <input placeholder="Altura" name="retangulo_h" id="retangulo_h">
-                    </div>
-                    <div>
-                        <button onclick="retangulo()">Calcular</button>
-                    </div>
+            <div class="card-col-2">
+                <div class="group">
+                    <input placeholder="Base" name="retangulo_b" id="retangulo_b">
+                    <input placeholder="Altura" name="retangulo_h" id="retangulo_h">
+                    <button onclick="retangulo()">Calcular</button>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="left">
-                <div class="title">Quadrado</div>
-                <div>
-                    <img src="dev/quadrado.jpg" alt="">
+            <div class="card-col-1">
+                <h1>Paralelogramo</h1>
+                <img src="dev/paralelogramo.jpg" alt="">
+            </div>
+            <div class="card-col-2">
+                <div class="group">
+                    <input placeholder="Base" name="paralelograma_b" id="paralelograma_b">
+                    <input placeholder="Lado" name="paralelograma_a" id="paralelograma_a">
+                    <button onclick="paralelograma()">Calcular</button>
                 </div>
             </div>
-            <div class="right">
-                <div class="btn">
-                    <div>
-                        <input placeholder="Lado" name="quadrado_l" id="quadrado_l">
-                    </div>
-                    <div>
-                        <button onclick="quadrado()">Calcular</button>
-                    </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-col-1">
+                <h1>Quadrado</h1>
+                <img src="dev/quadrado.jpg" alt="">
+            </div>
+            <div class="card-col-2">
+                <div class="group">
+                    <input placeholder="Lado" name="quadrado_l" id="quadrado_l" style="margin-top: 50px;">
+                    <button onclick="quadrado()" style="margin-top: 40px;">Calcular</button>
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="left">
-                <div class="title">Paralelogramo</div>
-                <div>
-                    <img src="dev/paralelogramo.jpg" alt="">
-                </div>
+            <div class="card-col-1">
+                <h1>Trapézio</h1>
+                <img src="dev/trapezio.jpg" alt="">
             </div>
-            <div class="right">
-                <div class="btn">
-                    <div>
-                        <input placeholder="Base" name="paralelograma_b" id="paralelograma_b">
-                    </div>
-                    <div>
-                        <input placeholder="Lado" name="paralelograma_a" id="paralelograma_a">
-                    </div>
-                    <div>
-                        <button onclick="paralelograma()">Calcular</button>
-                    </div>
+            <div class="card-col-2">
+                <div class="group">
+                    <input placeholder="Lado 1" name="trapezio_l1" id="trapezio_l1" style="margin-top: 3px;">
+                    <input placeholder="Lado 2" name="trapezio_l2" id="trapezio_l2" style="margin-top: 2px;">
+                    <input placeholder="Lado 3" name="trapezio_l3" id="trapezio_l3" style="margin-top: 2px;">
+                    <input placeholder="Lado 4" name="trapezio_l4" id="trapezio_l4" style="margin-top: 2px;">
+                    <button onclick="trapezio()" style="margin-top: 2px;">Calcular</button>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="card">
-            <div class="left">
-                <div class="title">Trapézio</div>
-                <div>
-                    <img src="dev/trapezio.jpg" alt="">
-                </div>
-            </div>
-            <div class="right">
-                <div class="btn">
-                    <div>
-                        <input placeholder="Lado 1" name="trapezio_l1" id="trapezio_l1">
-                    </div>
-                    <div>
-                        <input placeholder="Lado 2" name="trapezio_l2" id="trapezio_l2">
-                    </div>
-                    <div>
-                        <input placeholder="Lado 3" name="trapezio_l3" id="trapezio_l3">
-                    </div>
-                    <div>
-                        <input placeholder="Lado 4" name="trapezio_l4" id="trapezio_l4">
-                    </div>
-                    <div>
-                        <button onclick="trapezio()">Calcular</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <div class="footer">
+        <h1>FiguraNos</h1>
+        <h2>Jhonatan Luiz Chagas</h2>
+        <h3>4 ADS 07/03/2020</h3>        
+    </div>
+
 
     </div>
 
-    <div class="nav">
-        <hr>
-        <span class="title">FiguraNos</span>
-        <br><br>
-        Jhonatan Luiz Chagas
-        <br>
-        4 ADS 20/02/2020
-    </div>
-    <hr>
     <script src="dev/scripts.js"></script>
 </body>
 
