@@ -9,7 +9,7 @@ Repositório com variedades de coisas (pequenos projetos), o intuito é testar h
 
 ---------------------------------------
 
-<h2> jogo-da-velha </h2>
+<h2> jogo_da_velha </h2>
   
 <p> É o clássico tic tac toe feito em javascript puro! </p>
   
