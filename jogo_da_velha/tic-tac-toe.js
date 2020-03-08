@@ -2,7 +2,7 @@ const tic_tac_toe = {
 
     // ATTRIBUTES
     board: ['', '', '', '', '', '', '', '', ''],
-    simbols: {
+    symbols: {
         options: ['O', 'X'],
         turn_index: 0,
         change: function () {
@@ -30,13 +30,13 @@ const tic_tac_toe = {
     make_play: function (position) {
         if (this.gameover) return false;
         if (this.board[position] === '') {
-            this.board[position] = this.simbols.options[this.simbols.turn_index];
+            this.board[position] = this.symbols.options[this.symbols.turn_index];
             this.draw();
-            let winning_sequences_index = this.check_winning_sequences(this.simbols.options[this.simbols.turn_index]);
+            let winning_sequences_index = this.check_winning_sequences(this.symbols.options[this.symbols.turn_index]);
             if (winning_sequences_index >= 0) {
                 this.game_is_over();
             } else {
-                this.simbols.change();
+                this.symbols.change();
             }
             return true;
         }
@@ -45,17 +45,32 @@ const tic_tac_toe = {
         }
     },
 
-    check_winning_sequences: function (simbol) {
+    check_winning_sequences: function (symbol) {
 
         for (i in this.winning_sequences) {
-            if (this.board[this.winning_sequences[i][0]] == simbol &&
-                this.board[this.winning_sequences[i][1]] == simbol &&
-                this.board[this.winning_sequences[i][2]] == simbol) {
+            if (this.board[this.winning_sequences[i][0]] == symbol &&
+                this.board[this.winning_sequences[i][1]] == symbol &&
+                this.board[this.winning_sequences[i][2]] == symbol) {
                 console.log('winning sequences INDEX:' + i);
+                this.paint(symbol, i);
                 return i;
             }
         };
         return -1;
+    },
+
+    paint: function (symbol, sequence) {
+        let pos1 = document.getElementById("pos" + this.winning_sequences[sequence][0]);
+        pos1.classList.add("win");
+        pos1.classList.remove("pos");
+
+        let pos2 = document.getElementById("pos" + this.winning_sequences[sequence][1]);
+        pos2.classList.add("win");
+        pos2.classList.remove("pos");
+
+        let pos3 = document.getElementById("pos" + this.winning_sequences[sequence][2]);
+        pos3.classList.add("win");
+        pos3.classList.remove("pos");
     },
 
     game_is_over: function () {
@@ -73,7 +88,7 @@ const tic_tac_toe = {
         let content = '';
 
         for (i in this.board) {
-            content += '<div onclick="tic_tac_toe.make_play(' + i + ')">' + this.board[i] + '</div>';
+            content += '<div class="pos" id="pos' + i + '" onclick="tic_tac_toe.make_play(' + i + ')">' + this.board[i] + '</div>';
         };
 
         this.container_element.innerHTML = content;
