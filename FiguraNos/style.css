@@ -98,7 +98,6 @@ body {
 .title {
     margin: 0px;
     padding: 0px;
-   
     color: white;
     text-align: center;
     border-bottom: white;
@@ -107,7 +106,7 @@ body {
     margin-bottom: 30px;
 }
 
-.title h1{
+.title h1 {
     font-size: 35px;
 }
 
@@ -130,4 +129,17 @@ body {
 
 .footer h3 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        height: auto;
+        padding: 10px 0px 20px 0px;
+    }
+    .card-col-1 {
+        width: 100%;
+    }
+    .card-col-2 {
+        width: 100%;
+    }
 }
