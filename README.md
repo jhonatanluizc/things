@@ -1,5 +1,5 @@
-# things
-Repositório com variedades de coisas (pequenos projetos), o intuito é testar habilidades com linguagens de programação
+# thing
+Repositório com variedades de coisas (pequenos projetos), com a ideia de testar habilidades com linguagens de programação
 
 ---------------------------------------
 
