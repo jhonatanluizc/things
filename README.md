@@ -12,5 +12,6 @@ Repositório com variedades de coisas (pequenos projetos), com a ideia de testar
 <h2> jogo_da_velha </h2>
   
 <p> É o clássico tic tac toe feito em javascript puro! </p>
+link: https://sotndragon.github.io/things/jogo_da_velha/
   
 ---------------------------------------
